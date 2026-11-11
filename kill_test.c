@@ -2,9 +2,9 @@
 #include <signal.h>
 
 int main(void) {
-    int target_pid = 9999;
+    int target_pid = 1234;
     kill(target_pid, 15);
-    printf("example signal %d
+    printf("Sent SIGTERM to %d
 ", target_pid);
     return 0;
 }
